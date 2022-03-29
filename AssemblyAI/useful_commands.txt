@@ -1,0 +1,1 @@
+docker build -t eu.gcr.io/drone-swarm/assemblyai_demo:v1 .

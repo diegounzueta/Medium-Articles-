@@ -1,0 +1,282 @@
+{
+    "status": "success",
+    "results": [
+        {
+            "count": 10,
+            "rank": 0.07,
+            "text": "other people",
+            "timestamps": [
+                {
+                    "start": 55990,
+                    "end": 56534
+                },
+                {
+                    "start": 6113732,
+                    "end": 6114078
+                },
+                {
+                    "start": 6644948,
+                    "end": 6645450
+                },
+                {
+                    "start": 6647072,
+                    "end": 6647454
+                },
+                {
+                    "start": 8388344,
+                    "end": 8389074
+                },
+                {
+                    "start": 8392292,
+                    "end": 8393120
+                },
+                {
+                    "start": 8566796,
+                    "end": 8567118
+                },
+                {
+                    "start": 8602404,
+                    "end": 8603220
+                },
+                {
+                    "start": 9000532,
+                    "end": 9001420
+                },
+                {
+                    "start": 9004516,
+                    "end": 9004874
+                }
+            ]
+        },
+        {
+            "count": 3,
+            "rank": 0.06,
+            "text": "many people",
+            "timestamps": [
+                {
+                    "start": 983756,
+                    "end": 984114
+                },
+                {
+                    "start": 1351870,
+                    "end": 1352834
+                },
+                {
+                    "start": 2320144,
+                    "end": 2320682
+                }
+            ]
+        },
+        {
+            "count": 2,
+            "rank": 0.06,
+            "text": "other things",
+            "timestamps": [
+                {
+                    "start": 204916,
+                    "end": 205178
+                },
+                {
+                    "start": 3531516,
+                    "end": 3532260
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "rank": 0.06,
+            "text": "regular people",
+            "timestamps": [
+                {
+                    "start": 7941450,
+                    "end": 7942174
+                }
+            ]
+        },
+        {
+            "count": 12,
+            "rank": 0.06,
+            "text": "most people",
+            "timestamps": [
+                {
+                    "start": 1740930,
+                    "end": 1741378
+                },
+                {
+                    "start": 3324404,
+                    "end": 3324714
+                },
+                {
+                    "start": 5266236,
+                    "end": 5267100
+                },
+                {
+                    "start": 6120320,
+                    "end": 6120870
+                },
+                {
+                    "start": 6272776,
+                    "end": 6273590
+                },
+                {
+                    "start": 6274396,
+                    "end": 6274838
+                },
+                {
+                    "start": 6406324,
+                    "end": 6406694
+                },
+                {
+                    "start": 8193272,
+                    "end": 8193810
+                },
+                {
+                    "start": 8552476,
+                    "end": 8553280
+                },
+                {
+                    "start": 9016844,
+                    "end": 9017900
+                },
+                {
+                    "start": 9019940,
+                    "end": 9020622
+                },
+                {
+                    "start": 9311598,
+                    "end": 9312374
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "rank": 0.06,
+            "text": "Instagram people",
+            "timestamps": [
+                {
+                    "start": 2325910,
+                    "end": 2328246
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "rank": 0.06,
+            "text": "fuck people",
+            "timestamps": [
+                {
+                    "start": 9006904,
+                    "end": 9007598
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "rank": 0.06,
+            "text": "French people",
+            "timestamps": [
+                {
+                    "start": 2920644,
+                    "end": 2921170
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "rank": 0.06,
+            "text": "white people",
+            "timestamps": [
+                {
+                    "start": 7341546,
+                    "end": 7341914
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "rank": 0.06,
+            "text": "normal people",
+            "timestamps": [
+                {
+                    "start": 709160,
+                    "end": 709746
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "rank": 0.06,
+            "text": "unhinged people",
+            "timestamps": [
+                {
+                    "start": 124212,
+                    "end": 125278
+                }
+            ]
+        },
+        {
+            "count": 4,
+            "rank": 0.06,
+            "text": "other cars",
+            "timestamps": [
+                {
+                    "start": 3684802,
+                    "end": 3685498
+                },
+                {
+                    "start": 3696034,
+                    "end": 3696574
+                },
+                {
+                    "start": 5415816,
+                    "end": 5416690
+                },
+                {
+                    "start": 7181490,
+                    "end": 7182042
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "rank": 0.05,
+            "text": "more things",
+            "timestamps": [
+                {
+                    "start": 8743284,
+                    "end": 8744100
+                }
+            ]
+        },
+        {
+            "count": 1,
+            "rank": 0.05,
+            "text": "real tech people",
+            "timestamps": [
+                {
+                    "start": 6378252,
+                    "end": 6379726
+                }
+            ]
+        },
+        {
+            "count": 3,
+            "rank": 0.05,
+            "text": "new things",
+            "timestamps": [
+                {
+                    "start": 3163928,
+                    "end": 3164430
+                },
+                {
+                    "start": 3165692,
+                    "end": 3166038
+                },
+                {
+                    "start": 3167326,
+                    "end": 3167730
+                }
+            ]
+        }
+    ]
+}
