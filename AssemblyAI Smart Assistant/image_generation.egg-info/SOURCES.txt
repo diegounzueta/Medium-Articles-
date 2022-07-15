@@ -1,0 +1,8 @@
+setup.py
+image_generation.egg-info/PKG-INFO
+image_generation.egg-info/SOURCES.txt
+image_generation.egg-info/dependency_links.txt
+image_generation.egg-info/requires.txt
+image_generation.egg-info/top_level.txt
+trainer/__init__.py
+trainer/task.py

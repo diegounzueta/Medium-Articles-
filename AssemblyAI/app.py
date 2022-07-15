@@ -60,7 +60,7 @@ class app:
     def video_characteristics(self):
         st.markdown("## Video Characteristics")
         st.markdown("Number of Speakers: " +
-                    str(len(self.words["speaker"].unique())))
+                    str(len(self.words["speaker"].unique()) + 1))
         st.markdown("Top 5 Most Relevant Topics:")
         # st.write(self.categories["summary"])
         keys = list(self.categories["summary"].keys())[:5]
@@ -187,6 +187,9 @@ class app:
             # st.write(sentence)
             speaker1, space, speaker2 = st.columns((1, 0.2, 1))
             cols = [speaker1, speaker2]
+
+            if self.selected_chap["index"][0] == 1:
+                index += 1
             with cols[index % 2]:
                 if index % 2 == 0:
                     st.markdown('<p style="color: white">{}</p>'.format(sentence),

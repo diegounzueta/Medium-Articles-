@@ -4,4 +4,6 @@ numpy
 streamlit-player
 seaborn
 matplotlib
+yfinance 
+click==8
 

@@ -1,1 +1,10 @@
-docker build -t eu.gcr.io/drone-swarm/assemblyai_demo:v1 .
+docker build -t eu.gcr.io/drone-swarm/tech_check:v3 .
+
+gcloud init
+
+docker push eu.gcr.io/drone-swarm/tech_check:v4
+
+
+
+
+gcloud auth configure-docker

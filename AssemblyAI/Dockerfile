@@ -11,4 +11,4 @@ RUN pip install -r requirements.txt
 
 
 # Run
-CMD streamlit run app.py –server.port=8080 –server.address=0.0.0.0 --theme.base "dark"
+CMD streamlit run tech_check.py –server.port=8080 –server.address=0.0.0.0 --theme.base "dark"

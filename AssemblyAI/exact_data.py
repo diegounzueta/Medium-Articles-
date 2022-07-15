@@ -103,4 +103,4 @@ def pipeline(filename):
 
 
 if __name__ == '__main__':
-    pipeline('podcast_clip.mp3')
+    pipeline('tech_check.mp3')
