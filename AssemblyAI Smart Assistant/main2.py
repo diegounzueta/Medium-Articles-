@@ -8,10 +8,53 @@ import base64
 import json
 import openai
 import pyttsx3
+import time 
 import os
 from api_keys import assemblyAI_key, openaI_key
 openai.api_key = openaI_key
 
+
+from google.cloud import aiplatform
+
+
+def create_custom_job_sample(
+    caption: str,
+    project: str,
+    display_name: str,
+    container_image_uri: str,
+    location: str = "us-central1",
+    api_endpoint: str = "us-central1-aiplatform.googleapis.com",
+):
+    # The AI Platform services require regional API endpoints.
+    client_options = {"api_endpoint": api_endpoint}
+    # Initialize client that will be used to create and send requests.
+    # This client only needs to be created once, and can be reused for multiple requests.
+    client = aiplatform.gapic.JobServiceClient(client_options=client_options)
+    custom_job = {
+        "display_name": display_name,
+        "job_spec": {
+            "worker_pool_specs": [
+                {
+                    "machine_spec": {
+                        "machine_type": "n1-standard-4",
+                        "accelerator_type": aiplatform.gapic.AcceleratorType.NVIDIA_TESLA_K80,
+                        "accelerator_count": 1,
+                    },
+                    "replica_count": 1,
+                    "python_package_spec": {
+                        "executor_image_uri": container_image_uri,
+                        "package_uris" : ["gs://image_gen_jobs/image_generation-0.2.tar.gz"],
+                        "python_module": "trainer.task",
+                        "args":["--caption={}".format(caption)]
+                        },
+                }
+            ]
+        },
+    }
+    parent = f"projects/{project}/locations/{location}"
+    response = client.create_custom_job(parent=parent, custom_job=custom_job)
+    print("response:", response)
+      
 
 class app:
    def __init__(self):
@@ -134,9 +177,32 @@ class app:
 
             st.markdown("## ")
             st.markdown("## ")
+            
+            # launch job to vertex
+            create_custom_job_sample(
+                 caption = "t",
+                 project = "drone-swarm",
+                 container_image_uri = "europe-docker.pkg.dev/vertex-ai/training/pytorch-gpu.1-10:latest",
+                 display_name = "art_gen_script")
+            
+            # add delay for job to run
+            time.sleep(300)
 
+            #load image from bucket
+            
+
+            from google.cloud import storage
+          
+            client = storage.Client()
+
+            bucket = client.get_bucket('image_gen')
+
+            blob = bucket.get_blob('image_gen/{}.png'.format(t))
+            blob.download_to_filename('{}.png'.format(t))
+
+            #show image
             from PIL import Image
-            image = Image.open('city.png')
+            image = Image.open('{}.png'.format(t))
 
             st.image(image, caption=t)
 
